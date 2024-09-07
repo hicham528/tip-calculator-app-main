@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+:root {
+  --Very_dark_cyan: hsl(183, 100%, 15%);
+  --Dark_grayish_cyan: hsl(186, 14%, 43%);
+  --Grayish_cyan: hsl(184, 14%, 56%);
+  --Light_grayish_cyan: hsl(185, 41%, 84%);
+  --Very_light_grayish_cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --Strong_cyan: hsl(172, 67%, 45%);
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light_grayish_cyan);
+  flex-direction: column;
+  gap: 20px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  width: 700px;
+  background-color: var(--White);
+  border-radius: 20px;
+  padding: 20px;
+}
+.calculate_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+}
+.calculate_container h3 {
+  color: var(--Very_dark_cyan);
+}
+.input_bill {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  background-color: var(--Light_grayish_cyan);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.input_bill input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 80%;
+  text-align: right;
+  font-weight: 600;
+  font-size: 20px;
+}
+.input_bill input::placeholder {
+  color: var(--Grayish_cyan);
+  font-weight: 600;
+  font-size: 20px;
+}
+.input_bill img {
+  height: 20px;
+  width: 15px;
+}
+.calculate_container .errors {
+  color: red;
+  font-size: 13px;
+  font-weight: 400;
+}
+.select_btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.select_btn .last_span {
+  height: 30px;
+  width: 100px;
+  background-color: var(--Very_dark_cyan);
+  color: var(--White);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.new_span {
+  height: 30px;
+  width: 100px;
+  background-color: var(--Strong_cyan);
+  color: var(--White);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.result_container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very_dark_cyan);
+    color: var(--White);
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 30PX;
+}
+.tip_amount_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tip_amount_content .details{
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+}
+.tip_amount_content .details h3{
+    font-size: 18px;
+}
+.tip_amount_content .details span{
+    color: var(--Light_grayish_cyan);
+    font-size: 13px;
+}
+.tip_amount_content h1{
+    color: var(--Strong_cyan);
+    font-size: 30px;
+}
+.result_container button{
+    color: var(--White);
+    background-color: var(--Dark_grayish_cyan);
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.custome{
+    width: 100px;
+    height: 30px;
+    
+}
+.custome input{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--Light_grayish_cyan);
+    text-align: right;
+    font-weight: 600;
+    font-size: 18px;
+}
+.custome input::placeholder{
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        background-color: var(--White);
+        border-radius: 20px;
+        padding: 20px;
+        flex-direction: column;
+        margin-top: 70px;
+      }
+      .result_container{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--Very_dark_cyan);
+        color: var(--White);
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+        gap: 30PX;
+    }
+    .result_container button{
+        color: var(--Light_grayish_cyan);
+        background-color: var(--Dark_grayish_cyan);
+        height: 30px;
+        width: 200px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        text-transform: capitalize;
+        transition: 0.5s;
+        cursor: pointer;
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+  }
+  
